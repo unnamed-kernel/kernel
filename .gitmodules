@@ -1,0 +1,4 @@
+[submodule "src/libc/chadlibc"]
+	path = src/libc/chadlibc
+	url = https://github.com/cute-engineewing/chadlibc
+	branch = main

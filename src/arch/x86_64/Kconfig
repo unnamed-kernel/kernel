@@ -1,0 +1,10 @@
+menu "Devices"
+    visible if ARCH_X86-64
+
+    config SERIAL_PORT
+        int "Serial port"
+        default 1
+        help
+          This is the serial port that the kernel will use for console
+          output.
+endmenu

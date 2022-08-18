@@ -1,0 +1,22 @@
+menu "Kernel tweak"
+    config SCHED_QUANTUM
+        int "Scheduler quantum"
+            default "10"
+            help 
+                Number of ticks to schedule a process.
+                The smaller the value, the more likely a process will be preempted.
+    choice KERNEL_ALLOC
+        prompt "Kernel Allocator"
+        default ALLOC_LIBALLOC
+        help
+            Allocator to use for kernel memory.
+            The liballoc allocator is the default.
+        
+        config ALLOC_LIBALLOC
+            bool "Liballoc"
+            help
+                Use the liballoc as the kernel allocator.
+    endchoice
+    
+
+endmenu

@@ -1,0 +1,8 @@
+sysroot/
+build/
+.gdb_history
+__pycache__/
+src/idl
+src/idl/src/
+.config*
+kernel.iso
